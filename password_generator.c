@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 void randomPasswordGeneration()
 {
     int lett,num,symb;
@@ -26,30 +24,16 @@ void randomPasswordGeneration()
 
     int count=(lett+num+symb);
 
-
 	int randomizer = 0;
-
-	
-	
-
 	
 	char numbers[] = "0123456789";
-
 	
 	char letter[] = "abcdefghijklmnoqprstuvwyzxABCDEFGHIJKLMNOQPRSTUYWVZX";
-
-	
-	
-
 	
 	char symbols[] = "!@#$^&*?";
 
-	
 	char password[count];
 
-   
-
-	
 	randomizer =rand() % 3;
 
     printf("This is your password as per your requirements: \n");
@@ -74,6 +58,7 @@ void randomPasswordGeneration()
 			password[i] = letter[rand() % 52];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
+			count_lett++;
 		}
 	}
 }
@@ -81,9 +66,6 @@ void randomPasswordGeneration()
 
 int main()
 {
-	
-	
-
 
 	randomPasswordGeneration();
 
